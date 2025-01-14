@@ -71,11 +71,11 @@ const Sidebar = () => {
           isSidebarCollapsed ? "px-5" : "px-8"
         }`}
       >
-        <div>Logo</div>
+        <div className="rounded-full w-[40px] h-full flex items-center" ><img className="rounded-full w-[35px] h-10 absolute" src="./logo.png" alt="" /></div>
         <h1
           className={`${
-            isSidebarCollapsed ? "hidden" : "block"
-          }font-extrabold text-2xl`}
+            isSidebarCollapsed ? "hidden pl-8" : "block"
+          }font-extrabold text-2xl `}
         >
           VSTOCK
         </h1>
