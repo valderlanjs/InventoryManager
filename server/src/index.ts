@@ -24,7 +24,7 @@ app.use(cors());
 
 /* ROTAS */
 app.use("/dashboard", dashboardRoutes) // http://localhost:8000/dashboard
-app.use("/products", productRoutes)  // http://localhost:8000/products
+app.use("/products", productRoutes); // http://localhost:8000/products
  
 
 
