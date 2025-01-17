@@ -1,5 +1,4 @@
 import React, { ChangeEvent, FormEvent, useState } from "react";
-import { v4 } from "uuid";
 import Header from "@/app/(components)/Header";
 
 type ProductFormData = {
@@ -21,7 +20,6 @@ const CreateProductModal = ({
   onCreate,
 }: CreateProductModalProps) => {
   const [formData, setFormData] = useState({
-    productId: v4(),
     name: "",
     price: 0,
     stockQuantity: 0,
