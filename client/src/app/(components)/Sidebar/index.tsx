@@ -3,6 +3,7 @@
 import { useAppDispatch, useAppSelector } from "@/app/redux";
 import { setIsSidebarCollapsed } from "@/state";
 import { Archive, CircleDollarSign, Clipboard, Layout, LucideIcon, Menu, Settings2, User } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -13,6 +14,7 @@ interface SidebarLinkProps {
   label: string;
   isCollapsed: boolean;
 }
+
 
 const SidebarLink = ({
   href,
@@ -71,7 +73,7 @@ const Sidebar = () => {
           isSidebarCollapsed ? "px-5" : "px-8"
         }`}
       >
-        <div className="rounded-full w-[40px] h-full flex items-center" ><img className="rounded-full w-[35px] h-10 absolute" src="./logo.png" alt="" /></div>
+        <div className="rounded-full w-[40px] h-full flex items-center" ><Image width={35} height={10} className="rounded-full w-[35px] h-10 absolute" src="/logo.png" alt="" /></div>
         <h1
           className={`${
             isSidebarCollapsed ? "hidden pl-8" : "block"
