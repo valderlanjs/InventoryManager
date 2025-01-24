@@ -7,6 +7,10 @@ import Rating from "@/app/(components)/Rating";
 import CreateProductModal from "./CreateProductModal";
 import Image from "next/image";
 
+
+const randomImageNumber = Math.floor(Math.random() * 3) + 1; // Gera números de 1 a 3
+const imageUrl = `https://s3-managenet.s3.sa-east-1.amazonaws.com/product${randomImageNumber}.png`;
+
 type ProductFormData = {
   name: string;
   price: number;
@@ -85,9 +89,7 @@ const Products = () => {
                   height={150}
                   className="mb-3 rounded-2xl w-36 h-36"
                   alt={product.name}
-                  src={`s3-managenet.s3.sa-east-1.amazonaws.com/product${
-                    Math.floor(Math.random() + 3) + 1
-                  }.png`}
+                  src={imageUrl}
                 />
                 <h3 className="text-lg text-gray-900 font-semibold ">
                   {product.name}

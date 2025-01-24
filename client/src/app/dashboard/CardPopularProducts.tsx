@@ -4,6 +4,10 @@ import React from "react";
 import Rating from "../(components)/Rating";
 import Image from "next/image";
 
+const randomImageNumber = Math.floor(Math.random() * 3) + 1; // Gera números de 1 a 3
+const imageUrl = `https://s3-managenet.s3.sa-east-1.amazonaws.com/product${randomImageNumber}.png`;
+
+
 const CardPopularProducts = () => {
   const { data: dashboardMetrics, isLoading } = useGetDashboardMetricsQuery();
 
@@ -29,7 +33,7 @@ const CardPopularProducts = () => {
                     height={48}
                     className="rounded-lg w-14 h-14"
                     alt={product.name}
-                    src={`s3-managenet.s3.sa-east-1.amazonaws.com/product${Math.floor(Math.random() +3) + 1}.png`}
+                    src={imageUrl}
                   />
                   <div className="flex flex-col justify-between gap-1">
                     <div className="font-bold text-gray-700">
