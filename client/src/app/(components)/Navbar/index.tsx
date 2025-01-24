@@ -2,6 +2,7 @@
 import { useAppDispatch, useAppSelector } from "@/app/redux";
 import { setIsDarkMode, setIsSidebarCollapsed } from "@/state";
 import { Bell, Menu, Moon, Search, Settings, Sun } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -20,8 +21,8 @@ const Navbar = () => {
 
   const toggleDarkMode = () => {
     dispatch(setIsDarkMode(!isDarkMode));
-  }
-  
+  };
+
   return (
     <div className="flex justify-between items-center w-full mb-7">
       {/* Barra esquerda */}
@@ -53,11 +54,10 @@ const Navbar = () => {
           <div>
             <button onClick={toggleDarkMode}>
               {isDarkMode ? (
-                 <Sun className="text-gray-500 cursor-pointer " size={24} />
-              ) : 
+                <Sun className="text-gray-500 cursor-pointer " size={24} />
+              ) : (
                 <Moon className="text-gray-500 cursor-pointer " size={24} />
-              }
-             
+              )}
             </button>
           </div>
           <div className="relative">
@@ -68,7 +68,13 @@ const Navbar = () => {
           </div>
           <hr className="w-0 h-7 border -border-solid border-l border-gray-300 mx-3" />
           <div className="flex items-center gap-3 cursor-pointer">
-            <div className="w-9 h-9">image</div>
+            <Image
+              width={50}
+              height={50}
+              className="rounded-full h-full object-cover"
+              alt="Perfil"
+              src="https://s3-managenet.s3.sa-east-1.amazonaws.com/profile.jpg"
+            />
             <span className="font-semibold">Valderlan Silva</span>
           </div>
         </div>

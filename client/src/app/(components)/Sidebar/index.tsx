@@ -2,7 +2,16 @@
 
 import { useAppDispatch, useAppSelector } from "@/app/redux";
 import { setIsSidebarCollapsed } from "@/state";
-import { Archive, CircleDollarSign, Clipboard, Layout, LucideIcon, Menu, Settings2, User } from "lucide-react";
+import {
+  Archive,
+  CircleDollarSign,
+  Clipboard,
+  Layout,
+  LucideIcon,
+  Menu,
+  Settings2,
+  User,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -14,7 +23,6 @@ interface SidebarLinkProps {
   label: string;
   isCollapsed: boolean;
 }
-
 
 const SidebarLink = ({
   href,
@@ -73,7 +81,13 @@ const Sidebar = () => {
           isSidebarCollapsed ? "px-5" : "px-8"
         }`}
       >
-        <div className="rounded-full w-[40px] h-full flex items-center" ><Image width={35} height={10} className="rounded-full w-[35px] h-10 absolute" src="/logo.png" alt="" /></div>
+        <Image
+          width={27}
+          height={27}
+          className="rounded w-8"
+          alt="vstock"
+          src="https://s3-managenet.s3.sa-east-1.amazonaws.com/logo.png"
+        />
         <h1
           className={`${
             isSidebarCollapsed ? "hidden pl-8" : "block"
@@ -98,25 +112,25 @@ const Sidebar = () => {
           label="Dashboard"
           isCollapsed={isSidebarCollapsed}
         />
-         <SidebarLink
+        <SidebarLink
           href="/inventory"
           icon={Archive}
           label="Inventário"
           isCollapsed={isSidebarCollapsed}
         />
-         <SidebarLink
+        <SidebarLink
           href="/products"
           icon={Clipboard}
           label="Produtos"
           isCollapsed={isSidebarCollapsed}
         />
-         <SidebarLink
+        <SidebarLink
           href="/users"
           icon={User}
           label="Usuários"
           isCollapsed={isSidebarCollapsed}
         />
-         <SidebarLink
+        <SidebarLink
           href="/settings"
           icon={Settings2}
           label="Configurações"
