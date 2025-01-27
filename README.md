@@ -218,4 +218,4 @@ Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE) para mais de
 
 ## Prévia da Aplicação
 
-<a href="https://main.d3u8bucqhwgs53.amplifyapp.com/" target="_blank">Acessar Site</a>.
+<a href="https://main.d3u8bucqhwgs53.amplifyapp.com/" target="_blank">Acessar Site</a>
