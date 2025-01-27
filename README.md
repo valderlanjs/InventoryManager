@@ -217,4 +217,4 @@ Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE) para mais de
 
 ## Prévia da Aplicação
 
-Demo [Demo](https://main.d3u8bucqhwgs53.amplifyapp.com/).
+Demo <a href="https://main.d3u8bucqhwgs53.amplifyapp.com/" target="_blank">Demo</a>.
