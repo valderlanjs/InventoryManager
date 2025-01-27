@@ -34,7 +34,8 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 - [ ] Implementar sistema de login, para cada usuário específico, fazendo com que cada um tenha seus próprios dados.
 - [ ] Implementar inclusão, exclusão e edição dos produtos para cada login.
-- [ ] Implementar autenticação avançada.
+- [ ] Implementar autenticação avançada - (OAuth2).
+- [ ] Implementar testes automatizados.
 
 
 ## 💻 Pré-requisitos
@@ -213,3 +214,7 @@ Como alternativa, consulte a documentação do GitHub em [como criar uma solicit
 
 Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE) para mais detalhes.
 
+
+## Prévia da Aplicação
+
+Demo [Demo](https://main.d3u8bucqhwgs53.amplifyapp.com/).
