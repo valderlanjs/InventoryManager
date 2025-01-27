@@ -66,9 +66,10 @@ Antes de iniciar, configure as variáveis de ambiente no arquivo `.env`.
 `DATABASE_URL` - utilizei o postgresql, mas pode utilizar um de sua preferência.
 
 Inicialize o banco de dados e execute o seed:
-```bash
-npx prisma migrate dev
-npx prisma db seed
+
+`npx prisma migrate dev`
+
+`npx prisma db seed`
 
 #### Inicie o servidor de desenvolvimento
 `npm run dev`: para o client e para o server
@@ -210,5 +211,5 @@ Como alternativa, consulte a documentação do GitHub em [como criar uma solicit
 
 ## 📝 Licença
 
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE) para mais detalhes.
 
