@@ -36,7 +36,7 @@ model Sales {
   quantity    Int
   unitPrice   Float
   totalAmount Float
-  product     Products @relation(fields: [productId], references: [productId])
+  product     Products @relation(fields: [productId], references: [productId], onDelete: Cascade)
 }
 
 model Purchases {
@@ -46,7 +46,7 @@ model Purchases {
   quantity   Int
   unitCost   Float
   totalCost  Float
-  product    Products @relation(fields: [productId], references: [productId])
+  product    Products @relation(fields: [productId], references: [productId], onDelete: Cascade)
 }
 
 model Expenses {
@@ -83,5 +83,5 @@ model ExpenseByCategory {
   category            String
   amount              BigInt
   date                DateTime
-  expenseSummary      ExpenseSummary @relation(fields: [expenseSummaryId], references: [expenseSummaryId])
+  expenseSummary      ExpenseSummary @relation(fields: [expenseSummaryId], references: [expenseSummaryId], onDelete: Cascade)
 }
