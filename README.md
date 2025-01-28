@@ -64,6 +64,7 @@ Para instalar o Sistema de Gestão de Inventário, siga estas etapas:
 Antes de iniciar, configure as variáveis de ambiente no arquivo `.env`.
 
 `PORT`
+
 `DATABASE_URL` - utilizei o postgresql, mas pode utilizar um de sua preferência.
 
 Inicialize o banco de dados e execute o seed:
@@ -217,4 +218,4 @@ Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE) para mais de
 
 ## Prévia da Aplicação
 
-Demo <a href="https://main.d3u8bucqhwgs53.amplifyapp.com/" target="_blank">Demo</a>.
+<a href="https://main.d3u8bucqhwgs53.amplifyapp.com/" target="_blank">Acessar Site</a>
